@@ -4,6 +4,9 @@ This is a fork of RiboTaper 1.3.1a with a modification to support non-canonical 
 Usage is the same as regular RiboTaper, except an optional comma separated list of start codons
 to search for should be supplied as the final paramater of the RiboTaper.sh script.
 
+No validation of the non-canonical start codons is performed. additional methods should be used to increase
+confidence in any ORFs discovered with non-canonical start codon being used as true start codons.
+
 E.g:
 RiboTaper.sh ribo_bam_file.bam rna_bam_file.bam /path/to/ribotaper/annotation 31,33 13,13 10 AUG,CUG,GUG
 
